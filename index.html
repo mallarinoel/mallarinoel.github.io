@@ -8,8 +8,13 @@
     <style>
         *{
             background-size: cover;
+            box-sizing: cover;
+            margin: 0;
+            
         }
         body{
+          display: flex;
+          flex-direction: column;
             background: #202124;
             color: #fff;
         }
@@ -22,6 +27,11 @@
             border-radius: 5px;
             border: 1px solid #30363d;
         }
+        .info{
+          background-color: #161b22;
+          height: 80%;
+          width: 20%;
+        }
         form{
           padding: 10px;
           margin: 0;
@@ -33,20 +43,35 @@
         h2{
           color: black;
         }
-        @media screen and (max-width: 800px){
+        .avatar{
+          border-radius: 50%;
+          width: 250px;
+          height: 250px;
+        }
+        @media screen and (max-width: 992px){
+
           h2{
              color: Yellow;
           }
+          .info{
+            display: block;
+            text-align: center;
+          }
+          .content{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
         }
+        
     </style>
 </head>
 <body>
-  <h2>Hello World</h2>
+  <div class="info">
+    <img class="avatar" src="\avatar.jpg" alt="image"/>
+  </div>
     <div class="content">
-      <form action="" method="get">
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name"/>
-      </form>
+      <h1>Hello World</h1>
     </div>
 </body>
 </html>
