@@ -15,37 +15,22 @@
         body{
           display: flex;
           flex-direction: column;
-            background: #202124;
-            color: #fff;
+          background: #202124;
+          color: grey;
+          align-content: center;
         }
-        .content{
-            margin: auto;
-            flex: 60%;
-            background-color: #161b22;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #30363d;
+        .main-content{
+        border: 1px solid white;
+        display: flex;
+        border-radius: 5px;
         }
-        .info{
-          background-color: #161b22;
-          flex: 20%;
-        }
-        form{
-          padding: 10px;
-          margin: 0;
-        }
-        input{
-          width: 100%;
-          border: none;
-        }
-        h2{
-          color: black;
-        }
-        .avatar{
-          border-radius: 50%;
-          width: 250px;
-          height: 250px;
-        }
+       .content{
+       text-align: center;
+       flex: 70%;
+       }
+       .profile{
+       text-align: center;
+       flex: 30%;
         @media screen and (max-width: 992px){
 
           h2{
@@ -57,15 +42,34 @@
           }
          
         }
+      
+}
         
     </style>
 </head>
 <body>
-  <div class="info">
-    <img class="avatar" src="\avatar.jpg" alt="image"/>
+  <div class="main-content">
+  <div class="menu">
   </div>
-    <div class="content">
-      <h1>Hello World</h1>
-    </div>
+  <div class="content">
+ <h1>Hello world</h1>
+    <h1>Wala kang Jowa!</h1>
+    <h1>Wala kang Jowa!</h1>
+    <h1>Wala kang Jowa!</h1>
+    <h1>Wala kang Jowa!</h1>
+    
+  </div>
+ <hr/>
+    <div class="profile">
+      
+         <div class="avatar">
+      <h1>Profile</h1>
+      <h2>Language</h2>
+           <h2>Language</h2>
+           <h2>Language</h2>
+           <h2>Language</h2>
+    </div>     
+  </div>
+  </div>
 </body>
 </html>
